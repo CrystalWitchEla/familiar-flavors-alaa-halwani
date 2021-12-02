@@ -24,3 +24,70 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root
+{
+    
+  --ion-color-background: #F1E0CD;
+  --ion-color-background-rgb: 241,224,205;
+  --ion-color-background-contrast: #000000;
+  --ion-color-background-contrast-rgb: 0,0,0;
+  --ion-color-background-shade: #d4c5b4;
+  --ion-color-background-tint: #f2e3d2;
+
+  --ion-color-base: var(--ion-color-background);
+  --ion-color-base-rgb: var(--ion-color-background-rgb);
+  --ion-color-contrast: var(--ion-color-background-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-background-contrast-rgb);
+  --ion-color-shade: var(--ion-color-background-shade);
+  --ion-color-tint: var(--ion-color-background-tint);
+
+  --ion-color-honey: #EC9706;
+  --ion-color-honey-rgb: 236,151,6;
+  --ion-color-honey-contrast: #000000;
+  --ion-color-honey-contrast-rgb: 0,0,0;
+  --ion-color-honey-shade: #d08505;
+  --ion-color-honey-tint: #eea11f;
+
+  --ion-color-base: var(--ion-color-honey);
+  --ion-color-base-rgb: var(--ion-color-honey-rgb);
+  --ion-color-contrast: var(--ion-color-honey-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-honey-contrast-rgb);
+  --ion-color-shade: var(--ion-color-honey-shade);
+  --ion-color-tint: var(--ion-color-honey-tint);
+
+  --ion-color-amber: #893101;
+  --ion-color-amber-rgb: 137,49,1;
+  --ion-color-amber-contrast: #ffffff;
+  --ion-color-amber-contrast-rgb: 255,255,255;
+  --ion-color-amber-shade: #792b01;
+  --ion-color-amber-tint: #95461a;
+
+  --ion-color-base: var(--ion-color-amber);
+  --ion-color-base-rgb: var(--ion-color-amber-rgb);
+  --ion-color-contrast: var(--ion-color-amber-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-amber-contrast-rgb);
+  --ion-color-shade: var(--ion-color-amber-shade);
+  --ion-color-tint: var(--ion-color-amber-tint);
+}
+
+.honey-btn
+{
+    --background: var(--ion-color-honey);
+    --color: var(--ion-color-amber);
+    border-radius: 8px;
+    text-transform: initial;
+    width: 90%;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-left: 5%;
+}
+
+.input-field
+{
+    border-radius: 8px;
+    color: #F1E0CD;
+    --background: var(--ion-color-amber);
+    margin: 3%;
+}
