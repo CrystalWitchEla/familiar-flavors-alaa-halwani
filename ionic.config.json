@@ -1,0 +1,7 @@
+{
+  "name": "familiar-flavors-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "familiar-flavors-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
