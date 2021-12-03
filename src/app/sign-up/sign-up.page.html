@@ -1,9 +1,70 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>sign-up</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="main-container">
+  <!-- <ion-img src="../../assets/images/back.png" class="back-btn"></ion-img> -->
 
-<ion-content>
+  <div class="navbar">
+    <ion-img src="../../assets/images/logo.png" class="logo-small"></ion-img>
+  </div>
 
+  <ion-item class="input-field">
+    <ion-label position="floating" style="color: #f1e0cd">First Name</ion-label>
+    <ion-input required="true" type="text"></ion-input>
+  </ion-item>
+  <ion-item class="input-field">
+    <ion-label position="floating" style="color: #f1e0cd">Last Name</ion-label>
+    <ion-input required="true" type="text"></ion-input>
+  </ion-item>
+  <ion-item class="input-field">
+    <ion-label position="floating" style="color: #f1e0cd">Username</ion-label>
+    <ion-input required="true" type="text"></ion-input>
+  </ion-item>
+  <ion-item class="input-field">
+    <ion-label position="floating" style="color: #f1e0cd">Email</ion-label>
+    <ion-input required="true" type="email"></ion-input>
+  </ion-item>
+  <ion-item class="input-field">
+    <ion-label position="floating" style="color: #f1e0cd">Password</ion-label>
+    <ion-input required="true" type="password"></ion-input>
+  </ion-item>
+  <ion-item class="input-field">
+    <ion-label position="floating" style="color: #f1e0cd"
+      >Confirm Password</ion-label
+    >
+    <ion-input required="true" type="password"></ion-input>
+  </ion-item>
+  <ion-item
+    class="input-field"
+    style="
+      width: 20%;
+      display: inline-flex;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+    "
+  >
+    <ion-label position="floating" style="color: #f1e0cd">ZIP</ion-label>
+    <ion-input required="true" type="numeric"></ion-input>
+  </ion-item>
+  <ion-item
+    class="input-field"
+    style="
+      width: 71%;
+      display: inline-flex;
+      margin-top: 0;
+      margin-left: 3%;
+      margin-bottom: 0;
+    "
+  >
+    <ion-label position="floating" style="color: #f1e0cd"
+      >Phone Number</ion-label
+    >
+    <ion-input required="true" type="tel"></ion-input>
+  </ion-item>
+  <ion-item class="input-field">
+    <ion-label>I am a</ion-label>
+    <ion-select placeholder="Select one">
+      <ion-select-option value="OWNER">Food Business Owner</ion-select-option>
+      <ion-select-option value="CUSTOMER">Customer</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button class="honey-btn">Sign Up</ion-button>
 </ion-content>

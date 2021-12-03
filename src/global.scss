@@ -27,7 +27,6 @@
 
 :root
 {
-    
   --ion-color-background: #F1E0CD;
   --ion-color-background-rgb: 241,224,205;
   --ion-color-background-contrast: #000000;
@@ -71,17 +70,22 @@
   --ion-color-tint: var(--ion-color-amber-tint);
 }
 
+.main-container
+{
+    --background: #F1E0CD;
+}
+
 .honey-btn
 {
     --background: var(--ion-color-honey);
     --color: var(--ion-color-amber);
     border-radius: 8px;
     text-transform: initial;
-    width: 90%;
+    width: 94%;
     display: flex;
     align-self: center;
     justify-self: center;
-    margin-left: 5%;
+    margin-left: 3%;
 }
 
 .input-field
@@ -90,4 +94,26 @@
     color: #F1E0CD;
     --background: var(--ion-color-amber);
     margin: 3%;
+}
+
+.back-btn
+{
+  width: 25px;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.logo-small
+{
+  width: 200px;
+  height: auto;
+}
+
+.navbar
+{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 5%;
 }
