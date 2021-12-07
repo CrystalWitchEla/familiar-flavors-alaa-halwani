@@ -70,13 +70,14 @@
 {
     --background: var(--ion-color-honey);
     --color: var(--ion-color-amber);
-    border-radius: 8px;
+    --border-radius: 8px;
     text-transform: initial;
     width: 94%;
     display: flex;
     align-self: center;
     justify-self: center;
     margin-left: 3%;
+    margin: 3%;
 }
 
 .input-field
@@ -97,7 +98,7 @@
 
 .logo-small
 {
-  width: 200px;
+  width: 40%;
   height: auto;
 }
 
@@ -108,3 +109,10 @@
   justify-content: center;
   margin-top: 5%;
 }
+
+ion-avatar
+{
+  --border-radius: 6px;
+  margin-right: 3%;
+}
+

@@ -1,0 +1,26 @@
+
+
+.menu-item {
+  background-color: #893101;
+  border-radius: 10px;
+  margin: 4% 10%;
+  height: max-content;
+  display: flex;
+  align-content: center;
+}
+
+.menu-item-img {
+  border-radius: 10px;
+  margin: 2%;
+  padding: 0;
+  width: min-content;
+  height: auto;
+  align-self: center;
+  border: 3px solid #ec9706;
+}
+
+.menu-item-desc {
+  margin: 0 3% 10% 0;
+  padding: 0;
+  white-space: normal;
+}

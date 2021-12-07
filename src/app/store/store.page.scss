@@ -1,10 +1,62 @@
 .store-pic {
   border: 3px solid #893101;
   border-radius: 8px;
-  margin-left: 5%;
+  margin: 0%;
   padding: 0;
   display: flex;
   justify-content: center;
   align-content: center;
-  position: absolute;
+}
+
+.amber-bg {
+  border: 3px solid #893101;
+  background-color: #893101;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 2%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: #f1e0cd;
+}
+
+.cover-img {
+  overflow: visible;
+  width: 100%;
+  height: auto;
+  --border-radius: 8px;
+  padding: 0;
+}
+
+.profile {
+  border: 3px solid #893101;
+  border-radius: 8px;
+  margin-top: -20%;
+  margin-left: 5%;
+  padding: 0;
+}
+.slide {
+  width: 55%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 3%;
+  background-color: #ec9706;
+  border: 3px solid #893101;
+}
+
+.slide-img {
+  border-radius: 8px;
+  margin: 3% 3% 3% 0;
+  height: 150px;
+  width: 220px;
+  padding: 0;
+  // border: 5px solid #893101;
+  overflow: hidden;
+}
+
+.slide-thumb {
+  border-radius: 8px;
+  height: 155px;
+  width: 225px;
+  overflow: hidden;
 }
