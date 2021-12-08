@@ -10,100 +10,33 @@
     ></ion-img>
   </ion-toolbar>
 
-  <ion-list
-    class="main-container"
-    style="
-      padding: 0;
-      margin: 3%;
-      --background: var(--ion-color-amber);
-      background-color: #f1e0cd;
-    "
-  >
-    <div class="feed-item">
-      <ion-card
-        class="main-container"
-        style="padding: 0; margin: 0; box-shadow: 0"
-      >
-        <ion-item class="main-container">
-          <ion-avatar>
-            <img src="../../assets/images/avatar.png" />
-          </ion-avatar>
-          <ion-label>
-            <h1>Store 1</h1>
-            <p>Cuisine: Italian</p>
-          </ion-label>
-        </ion-item>
-        <ion-img src="../../assets/images/logo.png"></ion-img>
-      </ion-card>
-    </div>
+  <ion-list class="feed-list">
+    <app-store-info
+      name="Ela Cooks"
+      cuisine="Salads & Pasta"
+      logo="../../assets/images/profile-pic2.jpg"
+      cover="../../assets/images/menu-item1.jfif"
+    ></app-store-info>
 
-    <div class="feed-item">
-      <ion-card
-        class="main-container"
-        style="padding: 0; margin: 0; box-shadow: 0"
-      >
-        <ion-item class="main-container">
-          <ion-avatar>
-            <img src="../../assets/images/avatar.png" />
-          </ion-avatar>
-          <ion-label>
-            <h1>Store 1</h1>
-            <p>Cuisine: Italian</p>
-          </ion-label>
-        </ion-item>
-        <ion-img src="../../assets/images/logo.png"></ion-img>
-      </ion-card>
-    </div>
-    <div class="feed-item">
-      <ion-card
-        class="main-container"
-        style="padding: 0; margin: 0; box-shadow: 0"
-      >
-        <ion-item class="main-container">
-          <ion-avatar>
-            <img src="../../assets/images/avatar.png" />
-          </ion-avatar>
-          <ion-label>
-            <h1>Store 1</h1>
-            <p>Cuisine: Italian</p>
-          </ion-label>
-        </ion-item>
-        <ion-img src="../../assets/images/logo.png"></ion-img>
-      </ion-card>
-    </div>
-    <div class="feed-item">
-      <ion-card
-        class="main-container"
-        style="padding: 0; margin: 0; box-shadow: 0"
-      >
-        <ion-item class="main-container">
-          <ion-avatar>
-            <img src="../../assets/images/avatar.png" />
-          </ion-avatar>
-          <ion-label>
-            <h1>Store 1</h1>
-            <p>Cuisine: Italian</p>
-          </ion-label>
-        </ion-item>
-        <ion-img src="../../assets/images/logo.png"></ion-img>
-      </ion-card>
-    </div>
-    <div class="feed-item">
-      <ion-card
-        class="main-container"
-        style="padding: 0; margin: 0; box-shadow: 0"
-      >
-        <ion-item class="main-container">
-          <ion-avatar>
-            <img src="../../assets/images/avatar.png" />
-          </ion-avatar>
-          <ion-label>
-            <h1>Store 1</h1>
-            <p>Cuisine: Italian</p>
-          </ion-label>
-        </ion-item>
-        <ion-img src="../../assets/images/logo.png"></ion-img>
-      </ion-card>
-    </div>
+    <app-store-info
+      name="Marvelous Spreads"
+      cuisine="Spreads"
+      logo="../../assets/images/profile-pic3.jpg"
+      cover="../../assets/images/menu-item4.jfif"
+    ></app-store-info>
+
+    <app-store-info
+      name="Veganized"
+      cuisine="Vegan Food Substitutes"
+      logo="../../assets/images/profile-pic2.jpg"
+      cover="../../assets/images/menu-item3.jfif"
+    ></app-store-info>
+
+    <app-store-info
+      name="Ela Cooks"
+      cuisine="Salads & Pasta"
+      logo="../../assets/images/profile-pic1.jpg"
+      cover="../../assets/images/menu-item2.jfif"
+    ></app-store-info>
   </ion-list>
 </ion-content>
