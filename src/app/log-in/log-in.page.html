@@ -1,15 +1,47 @@
 <ion-content class="main-container">
   <ion-img class="logo" src="../../assets/images/logo.png"></ion-img>
 
-  <ion-item class="input-field">
-    <ion-label position="floating" style="color: #F1E0CD;">Email, username or phone number</ion-label>
-    <ion-input required="true" type="email" ></ion-input>
-  </ion-item>
-  <ion-item class="input-field">
-    <ion-label position="floating" style="color: #F1E0CD;">Password</ion-label>
-    <ion-input required="true" type="password"></ion-input>
-  </ion-item>
-  <ion-button class="honey-btn">Log In</ion-button>
-  <ion-button fill="none" size = "full" class="sign-up">Don't have an account? Sign Up!</ion-button>
+  <form [formGroup]="form">
+    <ion-item class="input-field">
+      <ion-label position="floating" style="color: #f1e0cd"
+        >Email, username or phone number</ion-label
+      >
+      <ion-input
+        required="true"
+        type="email"
+        formControlName="email"
+      ></ion-input>
+    </ion-item>
+    <app-error-message
+      [field]="form.get('email')"
+      message="*Email is mandatory."
+      error="required"
+    ></app-error-message>
+    <app-error-message
+      [field]="form.get('email')"
+      message="*Email is invalid."
+      error="email"
+    ></app-error-message>
+    
 
+    <ion-item class="input-field">
+      <ion-label position="floating" style="color: #f1e0cd">Password</ion-label>
+      <ion-input
+        required="true"
+        type="password"
+        formControlName="password"
+      ></ion-input>
+    </ion-item>
+    <app-error-message
+      [field]="form.get('password')"
+      message="*Password is mandatory."
+      error="required"
+    ></app-error-message>
+    <ion-button class="honey-btn" (click)="login()" [disabled]="!form.valid"
+      >Log In</ion-button
+    >
+    <ion-button fill="none" size="full" class="sign-up" (click)="signup()"
+      >Don't have an account? Sign Up!</ion-button
+    >
+  </form>
 </ion-content>

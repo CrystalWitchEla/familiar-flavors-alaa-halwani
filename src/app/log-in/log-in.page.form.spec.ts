@@ -1,4 +1,3 @@
-import { componentFactoryName } from '@angular/compiler';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { LoginPageForm } from './log-in.page.form';
 
@@ -16,6 +15,7 @@ describe('LoginPageForm', () => {
     expect(form.get('email')).not.toBeNull();
     expect(form.get('email').value).toEqual('');
     expect(form.get('email').valid).toBeFalsy();
+
     expect(form.get('password')).not.toBeNull();
     expect(form.get('password').value).toEqual('');
     expect(form.get('password').valid).toBeFalsy();
@@ -39,5 +39,4 @@ describe('LoginPageForm', () => {
 
     expect(form.valid).toBeTruthy();
   });
-
 });

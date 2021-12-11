@@ -9,7 +9,7 @@ export class MenuItemComponent implements OnInit {
   @Input() name: string;
   @Input() price: number;
   @Input() img: string;
-  @Input() desc : string;
+  @Input() desc: string;
 
   constructor() {}
 

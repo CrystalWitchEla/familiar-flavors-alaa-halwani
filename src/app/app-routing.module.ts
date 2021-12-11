@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: () => import('./sign-up/sign-up.module').then( m => m.SignUpPageModule)
   },
   {
+    path: 'store',
+    loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
+  },
+  {
     path: 'feed',
     loadChildren: () => import('./feed/feed.module').then( m => m.FeedPageModule)
   },
@@ -23,22 +27,6 @@ const routes: Routes = [
     path: 'cart',
     loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
   },
-  {
-    path: 'store',
-    loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
-  },
-  {
-    path: 'search',
-    loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
-  },
-  {
-    path: 'profile',
-    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
-  },
-  {
-    path: 'check-out',
-    loadChildren: () => import('./check-out/check-out.module').then( m => m.CheckOutPageModule)
-  }
 ];
 
 @NgModule({
@@ -47,4 +35,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
