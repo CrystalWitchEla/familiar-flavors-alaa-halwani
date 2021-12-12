@@ -22,7 +22,6 @@
       message="*Email is invalid."
       error="email"
     ></app-error-message>
-    
 
     <ion-item class="input-field">
       <ion-label position="floating" style="color: #f1e0cd">Password</ion-label>
@@ -37,8 +36,21 @@
       message="*Password is mandatory."
       error="required"
     ></app-error-message>
-    <ion-button class="honey-btn" (click)="login()" [disabled]="!form.valid"
+    <ion-button
+      class="honey-btn"
+      (click)="login()"
+      [disabled]="!form.valid"
+      id="loginButton"
       >Log In</ion-button
+    >
+    <ion-button
+      fill="none"
+      size="full"
+      class="forgot"
+      id="recoverPasswordButton"
+      [disabled]="!form.get('email').valid"
+      (click)="forgotemailpassword()"
+      >Forgot email/password</ion-button
     >
     <ion-button fill="none" size="full" class="sign-up" (click)="signup()"
       >Don't have an account? Sign Up!</ion-button

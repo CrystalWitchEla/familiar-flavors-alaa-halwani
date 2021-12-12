@@ -7,8 +7,10 @@ import { IonicModule } from '@ionic/angular';
 import { LogInPageRoutingModule } from './log-in-routing.module';
 
 import { LogInPage } from './log-in.page';
-import { LoginPageForm } from './log-in.page.form';
-import { ErrorMessageComponent } from '../components/error-message/error-message.component';
+import { ErrorMessageComponent } from '../../components/error-message/error-message.component';
+import { AppStoreModule } from 'src/store/AppStoreModule';
+import { Store, StoreModule } from '@ngrx/store';
+import { loginReducer } from 'src/store/login/login.reducers';
 
 @NgModule({
   imports: [
@@ -16,7 +18,9 @@ import { ErrorMessageComponent } from '../components/error-message/error-message
     FormsModule,
     IonicModule,
     LogInPageRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // StoreModule.forRoot([]),
+    StoreModule.forFeature("login", loginReducer)
   ],
   declarations: [LogInPage, ErrorMessageComponent]
 })

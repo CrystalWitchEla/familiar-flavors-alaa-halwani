@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { FeedPageRoutingModule } from './feed-routing.module';
 
 import { FeedPage } from './feed.page';
-import { StoreInfoComponent } from '../components/store-info/store-info.component';
+import { StoreInfoComponent } from '../../components/store-info/store-info.component';
 
 @NgModule({
   imports: [

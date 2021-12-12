@@ -9,23 +9,23 @@ const routes: Routes = [
   },
   {
     path: 'log-in',
-    loadChildren: () => import('./log-in/log-in.module').then( m => m.LogInPageModule)
+    loadChildren: () => import('./pages/log-in/log-in.module').then( m => m.LogInPageModule)
   },
   {
     path: 'sign-up',
-    loadChildren: () => import('./sign-up/sign-up.module').then( m => m.SignUpPageModule)
+    loadChildren: () => import('./pages/sign-up/sign-up.module').then( m => m.SignUpPageModule)
   },
   {
     path: 'store',
-    loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
+    loadChildren: () => import('./pages/store-info/store.module').then( m => m.StorePageModule)
   },
   {
     path: 'feed',
-    loadChildren: () => import('./feed/feed.module').then( m => m.FeedPageModule)
+    loadChildren: () => import('./pages/feed/feed.module').then( m => m.FeedPageModule)
   },
   {
     path: 'cart',
-    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+    loadChildren: () => import('./pages/cart/cart.module').then( m => m.CartPageModule)
   },
 ];
 
